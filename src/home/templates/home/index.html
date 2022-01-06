@@ -1,0 +1,48 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio - Développeur Web Python</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body  >
+
+    <main>
+
+    <div  id="home">
+
+        <img  class="color-change-2x" src="{% static 'home/home-background.jpg' %}" alt="image">
+        
+
+    </div>
+    
+    
+
+    <div class="tracking-in-expand" id="about-square">
+
+        <h1 class="tracking-in-expand" id="home-400">Je suis <span id="home-700">IVAN</span></h1> 
+
+        <h2 class="tracking-in-expand">Développeur Web <span id="green-python">Python</span></h2>
+
+        <h3><span id="portfolio-title"><a href="{% url 'projects:projects' %}">PORTFOLIO</a></span> • <span id="portfolio-contact"><a href="mailto:ivan.urbaczka@gmail.com?subject=Sujet du message">CONTACT</a></span></h3>
+
+            
+    </div>
+</main>
+
+
+<div class="footer">
+  <p><a href="https://twitter.com/MrRoadmap"><img src="https://img.icons8.com/fluency/32/000000/twitter.png"/></a></p>
+
+    <p><a href="https://www.youtube.com/channel/UCmntjBhwtGubRrtHOsP8wNQ"><img src="https://img.icons8.com/external-prettycons-flat-prettycons/32/000000/external-youtube-multimedia-prettycons-flat-prettycons.png"/></a></p>
+
+    </div>
+
+
+</body>
+</html>

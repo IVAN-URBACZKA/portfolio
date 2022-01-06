@@ -1,0 +1,48 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects - Développeur Web Python</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/projects.css' %}">
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="cols">
+
+    {% for project in projects %}
+
+
+			<div class="col" ontouchstart="this.classList.toggle('hover');">
+				<div class="container">
+					<div class="front" style="background-image: url({{ project.image.url }})">
+						<div class="inner">
+							<p>{{ project.title  }}</p>
+              <span>Lorem ipsum</span>
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner">
+						  <p>{{ project.content | truncatewords:15  }}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+    {% endfor %}
+
+		</div>
+  		</div>
+
+<div class="footer">
+  <p>MADE WITH ❤️ THANK YOU <a href="https://www.djangoproject.com/">DJANGO FRAMEWORK</a></p>
+</div>
+
+
+</body>
+</html>

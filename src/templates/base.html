@@ -1,0 +1,23 @@
+{% load static %}
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    {% endblock %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+<nav>
+
+</nav>
+
+<section id="blog">
+    {% block content %}
+    {% endblock %}
+</section>
+
+
+
+</body>
+</html>
