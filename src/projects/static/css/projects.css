@@ -15,24 +15,22 @@ h1{
 }
 
 .wrapper{
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
-  max-width: 80rem;
+  margin-bottom: 5%;
 }
 
 .cols{
-  display: -webkit-box;
-  display: -ms-flexbox;
+
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+   flex-wrap: wrap;
+
+    flex-direction: column;
+    align-items: center;
 }
 
 .col{
-  width: calc(25% - 2rem);
+  width: calc(90% - 2rem);
   margin: 1rem;
   cursor: pointer;
 }
@@ -58,8 +56,8 @@ h1{
 	-webkit-backface-visibility: hidden;
 	        backface-visibility: hidden;
 	text-align: center;
-	min-height: 280px;
-	height: auto;
+
+	height: 50vh;
 	border-radius: 10px;
 	color: #fff;
 	font-size: 1.5rem;
@@ -148,7 +146,7 @@ h1{
 }
 
 .front .inner p{
-  font-size: 2rem;
+  font-size: 6rem;
   margin-bottom: 2rem;
   position: relative;
 }
@@ -167,6 +165,7 @@ h1{
 }
 
 .front .inner span{
+  font-size:2.5em;
   color: rgba(255,255,255,0.7);
   font-family: 'Montserrat';
   font-weight: 300;
@@ -193,23 +192,49 @@ h1{
   color: #36CA33;
 }
 
-@media screen and (max-width: 720px){
-  .col{
-    width: 100%;
-    margin: 0 0 2rem 0;
-  }
+@media screen and (min-width: 720px){
+
 }
 
-@media screen and (max-width: 1024px){
-  .col{
-    width: calc(50% - 2rem);
-  }
+@media screen and (min-width: 1024px){
+
+.cols{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+          flex-direction: row;
 }
 
-@media screen and (max-width: 1280px){
-  .col{
-    width: calc(33.333333% - 2rem);
+.col{
+  width: calc(25% - 2rem);
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.front .inner p{
+
+    font-size: 2em;
+
+}
+
+.front .inner span{
+  font-size:1.2em;
+
   }
+
+.front .inner p{
+  font-size: 3rem;
+
+}
+
+
+@media screen and (min-width: 1280px){
+
 }
 
 

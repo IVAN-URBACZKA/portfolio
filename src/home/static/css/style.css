@@ -26,7 +26,7 @@
 }
 
 #home-400{
-    font-size: 3.5em;
+    font-size: 5.5em;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
@@ -38,7 +38,7 @@
 }
 
 #about-square h2{
-    font-size: 2.5em;
+    font-size: 4.5em;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
@@ -62,37 +62,19 @@
 #portfolio-title{
     border-bottom: 1px dashed whitesmoke;
     padding-bottom:2px;
+    font-size: 2em;
 }
 
 #portfolio-contact{
     border-bottom: 1px dashed lightgrey;
     padding-bottom:2px;
+    font-size: 2em;
+
 }
 
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: black;
-  color: white;
-  text-align: center;
-  opacity: 70%;
-  display: flex;
-  justify-content: flex-end;
-}
 
-.footer p {
-  font-size: 15px;
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-top: 10px;
-}
 
-.footer a{
-  text-decoration: none;
-  color: white;
-}
+
 
 .tracking-in-expand{animation:tracking-in-expand 2.5s cubic-bezier(.215,.61,.355,1.000) both}
 
@@ -105,6 +87,21 @@
 
 @media screen and (min-width: 1024px)
 {
+
+#home-400{
+    font-size: 4.5em;
+
+}
+
+#about-square h2{
+    font-size: 3.5em;
+
+}
+
+#portfolio-title,#portfolio-contact{
+
+    font-size: 1.5em;
+}
 
 }
 
